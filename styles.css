@@ -1,0 +1,21 @@
+body {
+  /* background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg); */
+  background-color: rgba(10, 10, 100, 0.3);
+  object-fit: contain;
+}
+header {
+  text-align: center;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  background-color: rgba(20, 20, 255, 0.5);
+}
+input {
+  width: 95%;
+}
