@@ -56,60 +56,69 @@
           </div>
           <div class="form-group">
             <p>Which option best describes for current role?</p>
-            <select id="dropdown">
+            <select id="dropdown" name="role" class="form-control" required>
               <optgroup>
-                <option>Student</option>
-                <option>Full Time Job</option>
-                <option>Full Time Learner</option>
-                <option>Prefer not to say</option>
-                <option>Other</option>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
               </optgroup>
             </select>
           </div>
-          <div class="form-group">
+          <div id="recommend" class="form-group">
             <p>Would you recommend the company to a friend?</p>
-            <label>
-              <input
-                name="recommend"
-                value="Definitely"
-                type="radio"
-                class="input-radio"
-              />Definitely
-            </label>
-            <label>
-              <input
-                name="recommend"
-                value="maybe"
-                type="radio"
-                class="input-radio"
-              />Maybe
-            </label>
-            <label>
-              <input
-                name="recommend"
-                value="notSure"
-                type="radio"
-                class="input-radio"
-              />Not sure
-            </label>
-            <label>
-              <input
-                name="recommend"
-                value="never"
-                type="radio"
-                class="input-radio"
-              />Never
-            </label>
+            <div class="recommend-options">
+              <label>
+                <input
+                  name="recommend"
+                  value="Definitely"
+                  type="radio"
+                  class="input-radio"
+                />Definitely
+              </label>
+              <label>
+                <input
+                  name="recommend"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+                />Maybe
+              </label>
+              <label>
+                <input
+                  name="recommend"
+                  value="notSure"
+                  type="radio"
+                  class="input-radio"
+                />Not sure
+              </label>
+              <label>
+                <input
+                  name="recommend"
+                  value="never"
+                  type="radio"
+                  class="input-radio"
+                />Never
+              </label>
+            </div>
           </div>
           <div class="form-group">
             <p>What is your favorite feature of our company?</p>
-            <select>
+            <select
+              id="most-like"
+              name="mostLike"
+              class="form-control"
+              required
+            >
               <optgroup>
-                <option>Challenges</option>
-                <option>Projects</option>
-                <option>Community</option>
-                <option>Open Source</option>
-                <option>I don´t know</option>
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="openSource">Open Source</option>
+                <option value="iDontKnow">I don´t know</option>
               </optgroup>
             </select>
           </div>
@@ -139,14 +148,70 @@
                 class="input-checkbox"
               />Data Visualization
             </label>
-            <option>Challenges</option>
-            <option>Open Source Community</option>
-            <option>Gitter help rooms</option>
-            <option>Videos</option>
-            <option>City Meetups</option>
-            <option>Wiki</option>
-            <option>Forum</option>
-            <option>Additional Courses</option>
+            <label>
+              <input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Challenges
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="open-source"
+                type="checkbox"
+                class="input-checkbox"
+              />Open Source Community
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="gitter-help"
+                type="checkbox"
+                class="input-checkbox"
+              />Gitter help rooms
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="videos"
+                type="checkbox"
+                class="input-checkbox"
+              />Videos
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="cityMeetups"
+                type="checkbox"
+                class="input-checkbox"
+              />City Meetups
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="wiki"
+                type="checkbox"
+                class="input-checkbox"
+              />Wiki
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="forum"
+                type="checkbox"
+                class="input-checkbox"
+              />Forum
+            </label>
+            <label>
+              <input
+                name="prefer"
+                value="additionalCourses"
+                type="checkbox"
+                class="input-checkbox"
+              />Additional Courses
+            </label>
           </div>
           <div class="form-group">
             <p for="suggestions">Any comments or suggestions?</p>
